@@ -5,21 +5,21 @@
 class DotDagger < Formula
   desc "Dotfiles manager — env resolution, DAG, symlinks, and packages"
   homepage "https://github.com/rocne/dot-dagger"
-  version "0.2.45"
+  version "0.2.46"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rocne/dot-dagger/releases/download/v0.2.45/dotd_v0.2.45_darwin_amd64.tar.gz"
-      sha256 "fa8fb1efdcab4a5b2a28ccf69322a562b9530e37a2938452c0303d9bd8116fae"
+      url "https://github.com/rocne/dot-dagger/releases/download/v0.2.46/dotd_v0.2.46_darwin_amd64.tar.gz"
+      sha256 "fbcadfef33da6df44cbae9f5935cd111777ea1a72dc18c5f49fc72c70b4b0b7c"
 
       define_method(:install) do
         bin.install "dotd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rocne/dot-dagger/releases/download/v0.2.45/dotd_v0.2.45_darwin_arm64.tar.gz"
-      sha256 "905f8f575b262a64c58e41b0746c9915f11e300251a9eb5f7be8168bd17d8448"
+      url "https://github.com/rocne/dot-dagger/releases/download/v0.2.46/dotd_v0.2.46_darwin_arm64.tar.gz"
+      sha256 "7dde418d4055c7b4b4fcbdc56469883aedb5deca998c5eae778e944ba7cfbfa0"
 
       define_method(:install) do
         bin.install "dotd"
@@ -29,15 +29,15 @@ class DotDagger < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rocne/dot-dagger/releases/download/v0.2.45/dotd_v0.2.45_linux_amd64.tar.gz"
-      sha256 "da95bb843d2a6f8cb110c0214a3efbdbe8e2ce11969678eea87b32e932af409a"
+      url "https://github.com/rocne/dot-dagger/releases/download/v0.2.46/dotd_v0.2.46_linux_amd64.tar.gz"
+      sha256 "e75333adf3a8d384847b9b32566075d4d5b8d9819767328917f16aea1dfe1720"
       define_method(:install) do
         bin.install "dotd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rocne/dot-dagger/releases/download/v0.2.45/dotd_v0.2.45_linux_arm64.tar.gz"
-      sha256 "ee24f1e5122729f484aa0a81607cfc3be7efb82bed6f8f32e2b98b1abe4574e6"
+      url "https://github.com/rocne/dot-dagger/releases/download/v0.2.46/dotd_v0.2.46_linux_arm64.tar.gz"
+      sha256 "83376e2f86add920d53a389916d527c05cac75d82219d57e104e2352fcb5c079"
       define_method(:install) do
         bin.install "dotd"
       end
